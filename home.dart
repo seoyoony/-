@@ -7,39 +7,52 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Text Exercise 01"),
-        centerTitle: false,
-        backgroundColor: Colors.lightGreen,
+        title: Text("Text Row"),
+        centerTitle: true,
+        backgroundColor: Colors.blue,
         foregroundColor: Colors.white,
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("유비"),
-            Text("관우"),
-            Text("장비"),
-            // 
-            Divider(
-              height: 30,
-              color: Colors.red,
-              thickness: 10,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text('제임스'),
+                  SizedBox(
+                    width: 10,
+                  ),                
+                Text('캐시'),
+                  SizedBox(
+                    width: 10,
+                  ),                
+                Text('캐니'),
+                  SizedBox(
+                    width: 10,
+                  ),                
+              ]                        
             ),
-            Text(
-              "조조",
-              style: TextStyle(
-                color: Colors.blue,
-                fontSize: 28,
-                fontWeight: FontWeight.bold,
-                letterSpacing: 5,
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text('James'),
+                  SizedBox(
+                    width: 10,
+                  ),                
+                Text('Cathy'),
+                  SizedBox(
+                    width: 10,
+                  ),                
+                Text('Kenny'),
+                  SizedBox(
+                    width: 10,
+                  ),                
+              ]                        
             ),
-            Text("여포"),
-            Text("동탁"),
-            
           ],
         ),
       ),
-    );
+    );    
   }
 }
