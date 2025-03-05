@@ -7,9 +7,9 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("삼국지"),
-        centerTitle: true,
-        backgroundColor: Colors.red,
+        title: Text("Text Exercise 01"),
+        centerTitle: false,
+        backgroundColor: Colors.lightGreen,
         foregroundColor: Colors.white,
       ),
       body: Center(
@@ -17,13 +17,28 @@ class Home extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text("유비"),
-            SizedBox(
-              height: 50,
-            ),
             Text("관우"),
             Text("장비"),
+            // 
+            Divider(
+              height: 30,
+              color: Colors.red,
+              thickness: 10,
+            ),
+            Text(
+              "조조",
+              style: TextStyle(
+                color: Colors.blue,
+                fontSize: 28,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 5,
+              ),
+            ),
+            Text("여포"),
+            Text("동탁"),
+            
           ],
-        )
+        ),
       ),
     );
   }
