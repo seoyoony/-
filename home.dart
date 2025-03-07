@@ -6,54 +6,125 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.amber,
       appBar: AppBar(
-        title: Text('Text with Column and Row'),
+        title: Text('Image Test'),
+        backgroundColor: Colors.blue,
+        foregroundColor: Colors.white,
+        centerTitle: false,
       ),
-      body: Center(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Icon(
-                    Icons.email_rounded
-                  ),
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                'images/pikachu-1.png',
+                width: 100,
+                height: 100,
+              ),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    Image.asset(
+                      'images/smile.png',
+                      width: 100,
+                      height: 100,
+                    ),
+                    Image.asset(
+                      'images/smile.png',
+                      width: 100,
+                      height: 100,
+                    ),
+                    Image.asset(
+                      'images/smile.png',
+                      width: 100,
+                      height: 100,
+                    ),
+                    Image.asset(
+                      'images/smile.png',
+                      width: 100,
+                      height: 100,
+                    ),
+                    Image.asset(
+                      'images/smile.png',
+                      width: 100,
+                      height: 100,
+                    ),
+                  ],
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Icon(
-                    Icons.account_balance
-                  ),
+              ),
+              Image.asset(
+                'images/pikachu-2.png',
+                width: 100,
+                height: 100,
+              ),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    Image.asset(
+                      'images/pikachu-1.png',
+                      width: 100,
+                      height: 100,
+                    ),
+                    Image.asset(
+                      'images/pikachu-1.png',
+                      width: 100,
+                      height: 100,
+                    ),
+                    Image.asset(
+                      'images/pikachu-1.png',
+                      width: 100,
+                      height: 100,
+                    ),
+                    Image.asset(
+                      'images/pikachu-1.png',
+                      width: 100,
+                      height: 100,
+                    ),
+                    Image.asset(
+                      'images/pikachu-1.png',
+                      width: 100,
+                      height: 100,
+                    ),
+                    Image.asset(
+                      'images/pikachu-1.png',
+                      width: 100,
+                      height: 100,
+                    ),
+                  ],
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Icon(
-                    Icons.account_circle
-                  ),
-                )
-              ],
-            ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Text("James"),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Text("Cathy"),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Text("Kenny"),
-                ),
-              ],
-            )
-          ],
+              ),
+              Image.asset(
+                'images/smile.png',
+                width: 100,
+                height: 100,
+              ),
+              Image.asset(
+                'images/pikachu-2.png',
+                width: 100,
+                height: 100,
+              ),
+              Image.asset(
+                'images/pikachu-1.png',
+                width: 100,
+                height: 100,
+              ),
+              Image.asset(
+                'images/smile.png',
+                width: 100,
+                height: 100,
+              ),
+              Image.asset(
+                'images/pikachu-2.png',
+                width: 100,
+                height: 100,
+              )
+            ],
+          ),
         ),
       ),
     );
